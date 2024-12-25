@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>個人期末展示網頁</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+   <title>我的網頁</title>
+  </head>
+  <body style="text-align:center; color: #000000; font-weight: 900; font-family:微軟正黑體;" onLoad="show()">
+    
+    <div id="content-overlay">
+      <h1 style="font-size: 40px;"><b><i>個人簡介</i></b></h1>
+  
+      <div id="ncyu">
+        <img id="ico">
+      </div>
+
+      <div id="parent">
+        <p style="color:black; font-family:微軟正黑體; font-size: 20px; color: #000000; text-align:center;">
+          姓名: 歐品浤 <br>
+          學校: <a href="https://www.ncyu.edu.tw/">國立嘉義大學</a><br>
+          星座:巨蟹座 <br>
+          個人網頁連結<br>
+          個人興趣:
+            <ul style="list-style-position: inside; color: #000000; font-size: 20px; font-weight: 900; text-align: center;">
+              <li>數位學習</li>
+              <li>追劇追星</li>
+              <li>睡覺耍廢</li>
+            </ul>
+          <a style="color:black; font-family:微軟正黑體; font-size: 20px; color: #000000; text-align:center;">最喜歡的歌手: 周興哲</a>
+        </p>
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/eZh1mC1vPgw" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  
+    <div id="content-overlay">
+      <h2 style="font-size: 40px"><b>記事欄</b></h2>
+      <div>
+        <textarea id="content" cols="50" rows="8"></textarea><br>
+        <button id="btn">送出</button><hr>
+      </div>
+      <div id="list">
+        <div id="news">
+          <p></p>
+        </div>
+      </div>
+    </div>
+ 
+    <div id="content-overlay">
+      <h2 style="font-size: 40px"><b>珍藏小說</b></h2>
+      
+      <div id="image1">
+        <div id=item>
+          <p style="font-size: 25px">天官賜福</p>
+          <a href="https://www.youtube.com/embed/c2jmFFsGCYs" target="_blank">
+            <img src="https://i.imgur.com/XiePmrj.jpg" alt="Image 1" id="image2">
+          </a>
+        </div>
+        
+        <div id=item>
+          <p style="font-size: 25px">某某</p>
+          <a href="https://www.youtube.com/embed/WxwoWVfEU_0" target="_blank">
+            <img src="https://i.imgur.com/o6vACyC.jpg" alt="Image 1" id="image2">
+          </a>
+        </div>  
+        
+        <div id=item>
+          <p style="font-size: 25px">魔道祖師</p>
+          <a href="https://www.youtube.com/embed/M3J1KRD1H1Q" target="_blank">
+            <img src="https://i.imgur.com/epadyFa.jpg" alt="Image 1" id="image2">
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div id="content-overlay2">
+      <h8 style="font-size: 40px"><b>時光迴廊</b></h8>
+      
+      <div class="corridor">
+        <div class="panel"></div>
+        <div class="panel"></div>
+        <div class="panel"></div>
+        <div class="panel"></div>
+        <div class="panel"></div>
+        <div class="panel"></div>
+      </div>
+      
+    </div>
+  
+    <div id="content-overlay">
+      <h3 style="font-size: 40px"><b>欺負金魚腦</b></h3>
+      <div class="game-board">
+        <!-- 卡片集合，卡片会由 JavaScript 动态填充 -->
+      </div>
+      <button id="reset-btn">重新開始</button>
+      <p id="status">還剩 8 對卡片</p>
+    </div>
+  
+    <div id="content-overlay">
+      <h4 style="font-size: 40px"><b>小畢卡索</b></h4>
+      <div class="container">
+        <canvas id="drawingBoard" width="600" height="400"></canvas>
+        <div class="controls">
+          <button id="clearBtn">Clear</button>
+          <input type="color" id="colorPicker" value="#000000">
+          <input type="range" id="brushSize" min="1" max="10" value="5">
+          <button id="eraserBtn">Eraser</button> <!-- 新增橡皮擦按鈕 -->
+        </div>
+      </div>
+    </div>
+  
+    <div id="destination">
+      <h1 style="color:black; font-family:微軟正黑體;">籤運占卜</h1>
+      <button id="fortuneButton">查看今日運勢</button>
+    </div>
+  
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
